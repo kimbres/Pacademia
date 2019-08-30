@@ -1,0 +1,43 @@
+.wrapper-header  {
+    height: 30vh;
+    padding: 10px;
+    background: #808080;
+    color: #fff;
+    box-shadow: 0 2px 5px -2px grey;
+}
+
+
+
+
+.acessar-conta {
+    position: relative;
+    top: 10px;
+    background-color: #fff;
+    border: 0;
+    color: #333;
+}
+
+@media screen and (min-width: 600px) {
+    .wrapper-header {
+        height: 15vh;
+    }
+
+    .menu-header li{
+        
+        list-style: none; 
+        display: inline-block;
+        position: relative; 
+        margin: 10px;
+        top: 20px;
+        font-size: 20px;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    
+    
+}

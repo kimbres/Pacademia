@@ -1,0 +1,40 @@
+<div class="wrapper-header">
+  <div class="row">
+      <div class=" col-md-8">
+      <ul class="menu-header">
+        <li>
+          <a routerLink="/">Home</a>
+        </li>
+        <li>
+            <a routerLink="">Quem Somos</a>
+        </li>
+        <li>
+            <a routerLink="/planos">Planos</a>
+        </li>
+        <li>
+            <a routerLink="/atividades">Atividades</a>
+        </li>
+        <li>
+            <a routerLink="">Contato</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <form [formGroup]="formLogin" (ngSubmit)='consultar()'>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <div class="form-check">
+              <label class="form-check-label">
+                <b>Acesse</b> seu cadastro
+              </label>
+              <input type="text" class="form-control" placeholder="Digite seu CPF" maxlength="14" [(ngModel)]="cpf" formControlName='cpf' (keypress)="mascara_cpf(this)">
+            </div>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary acessar-conta" [disabled]="!formLogin.valid">Acessar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
